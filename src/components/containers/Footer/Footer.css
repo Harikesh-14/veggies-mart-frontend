@@ -1,0 +1,30 @@
+/* Footer.css */
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  width: calc(100% - 20px);
+  background-color: #35a853;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.myFooter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ftr {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer_li {
+  color: white;
+  margin: 0 10px;
+}
