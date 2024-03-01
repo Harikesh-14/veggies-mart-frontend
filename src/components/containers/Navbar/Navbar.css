@@ -1,0 +1,62 @@
+.background {
+  background-color: #35a853;
+  padding: 0.3rem;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.bars {
+    margin-right: 1rem;
+    margin-left: .4rem;
+}
+
+.flex,
+.flex-row {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul > li {
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: black;
+  margin: 0 1.4rem;
+}
+
+.list {
+  color: white;
+}
+
+.all_categories {
+  color: black;
+  background-color: #ccc;
+  border-radius: 0.2rem;
+  padding: .35rem 2rem .35rem 0;
+}
+
+.all_categories:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.seller {
+  color: black;
+  background-color: yellow;
+  border-radius: 0.2rem;
+  padding: 0.35rem 2rem;
+}
