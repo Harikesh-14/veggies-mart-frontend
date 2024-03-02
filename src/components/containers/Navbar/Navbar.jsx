@@ -24,28 +24,21 @@ const Navbar = () => {
         <div className="subContainer">
           <ul className="flex flex-row">
             <li className="all_categories list">
-              <Link to={"/"}>
-                {" "}
-                <FontAwesomeIcon icon={faBars} className="bars" />
-                <DropdownMenu>
-                  <DropdownMenuTrigger>All Categories</DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuLabel>Product Categories</DropdownMenuLabel>
-                    <DropdownMenuSeparator />
-                    {/* <DropdownMenuItem>Profile</DropdownMenuItem> */}
-                    {ProductCategories &&
-                      ProductCategories.map((category, index) => {
-                        return (
-                          <DropdownMenuItem key={index}>
-                            <Link to={`/category/${category.category_name}`}>
-                              {category.category_name}
-                            </Link>
-                          </DropdownMenuItem>
-                        );
-                      })}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </Link>
+              <FontAwesomeIcon icon={faBars} className="bars" />
+              <DropdownMenu>
+                <DropdownMenuTrigger>All Categories</DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuLabel>Product Categories</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  {ProductCategories.categories.map((category) => (
+                    <DropdownMenuItem key={category.id}>
+                      <Link to={`/category/${category.category_name}`}>
+                        {category.category_name}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
             </li>
             <li className="list">
               <Link to={"/"}>Home</Link>
