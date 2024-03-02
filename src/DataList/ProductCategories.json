@@ -1,0 +1,95 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "category_name": "Fruits",
+        "products": ["Mango", "Apple", "Banana", "Strawberry", "Pineapple", "Grapes"],
+        "description": "A variety of fresh and delicious fruits for a healthy and tasty diet."
+      },
+      {
+        "id": 2,
+        "category_name": "Vegetables",
+        "products": ["Potato", "Tomato", "Carrot", "Cucumber", "Spinach", "Cabbage"],
+        "description": "Nutrient-rich vegetables for a well-balanced and nutritious meal."
+      },
+      {
+        "id": 3,
+        "category_name": "Pulses (Legumes)",
+        "products": ["Lentils", "Chickpeas", "Black Beans", "Kidney Beans", "Split Peas"],
+        "description": "Protein-packed legumes for a healthy vegetarian or vegan diet."
+      },
+      {
+        "id": 4,
+        "category_name": "Grains",
+        "products": ["Rice", "Quinoa", "Barley", "Oats", "Wheat"],
+        "description": "Versatile grains to complement a variety of dishes and cuisines."
+      },
+      {
+        "id": 5,
+        "category_name": "Spices",
+        "products": ["Cumin", "Coriander", "Turmeric", "Paprika", "Cinnamon"],
+        "description": "Aromatic spices to enhance the flavor of your favorite recipes."
+      },
+      {
+        "id": 6,
+        "category_name": "Nuts and Seeds",
+        "products": ["Almonds", "Walnuts", "Chia Seeds", "Flaxseeds", "Sunflower Seeds"],
+        "description": "Nutrient-dense nuts and seeds for a crunchy and wholesome snack."
+      },
+      {
+        "id": 7,
+        "category_name": "Dairy",
+        "products": ["Milk", "Cheese", "Butter", "Eggs", "Yogurt"],
+        "description": "Dairy products for a good source of calcium and essential nutrients."
+      },
+      {
+        "id": 8,
+        "category_name": "Oils and Cooking Essentials",
+        "products": ["Olive Oil", "Canola Oil", "Salt", "Pepper", "Vinegar"],
+        "description": "Essential cooking ingredients to add flavor and texture to your meals."
+      },
+      {
+        "id": 9,
+        "category_name": "Beverages",
+        "products": ["Water", "Juice", "Tea", "Coffee", "Soda"],
+        "description": "A variety of beverages to quench your thirst and enjoy refreshing drinks."
+      },
+      {
+        "id": 10,
+        "category_name": "Canned and Jarred Goods",
+        "products": ["Canned Tomatoes", "Pickles", "Jam", "Soup", "Pasta Sauce"],
+        "description": "Convenient and ready-to-use canned and jarred goods for quick and easy meals."
+      },
+      {
+        "id": 11,
+        "category_name": "Snacks",
+        "products": ["Chips", "Popcorn", "Nuts Mix", "Granola Bars", "Dried Fruits"],
+        "description": "Delicious snacks for a tasty treat between meals or on the go."
+      },
+      {
+        "id": 12,
+        "category_name": "Bakery and Baking Ingredients",
+        "products": ["Flour", "Sugar", "Baking Powder", "Yeast", "Chocolate Chips"],
+        "description": "High-quality ingredients for baking your favorite bread and desserts."
+      },
+      {
+        "id": 13,
+        "category_name": "Frozen Foods",
+        "products": ["Frozen Vegetables", "Frozen Fruits", "Frozen Pizza", "Ice Cream", "Frozen Meals"],
+        "description": "Convenient frozen foods for quick and easy meal preparation."
+      },
+      {
+        "id": 14,
+        "category_name": "Personal Care",
+        "products": ["Shampoo", "Soap", "Toothpaste", "Deodorant", "Lotion"],
+        "description": "Personal care items for your daily hygiene and grooming needs."
+      },
+      {
+        "id": 15,
+        "category_name": "Household Essentials",
+        "products": ["Dish Soap", "Paper Towels", "Trash Bags", "Cleaning Spray", "Kitchenware"],
+        "description": "Essential items for maintaining a clean and organized household."
+      }
+    ]
+  }
+  
