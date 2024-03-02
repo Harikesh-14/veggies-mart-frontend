@@ -1,62 +1,73 @@
-.background {
+.navbarMainBackground {
   background-color: #35a853;
-  padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+  padding: .3em 0;
 }
 
-.subContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 6rem;
-}
-
-.bars {
-    margin-right: 1rem;
-    margin-left: .4rem;
-}
-
-.flex,
-.flex-row {
-  justify-content: space-around;
+.navbarMainContainer {
+  width: 90%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
-ul > li {
-  list-style: none;
-  padding: 0.5rem;
-  font-size: 1rem;
+.allCategories {
   color: black;
-  margin: 0 1.4rem;
+  background-color: #f7f7f7;
+  border-radius: 0.2rem;
 }
 
-.list {
+.allCategories :hover {
+  background-color: aliceblue;
+  border-radius: 4px;
+}
+
+.categoryGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+}
+
+.categoryGroup img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.navbarMainContainer .navButtons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.navbarMainContainer .navButtons ul li .tabs{
   color: white;
+  padding: .5em 1.2em;
+  border-radius: 5px;
 }
 
-.all_categories {
-  color: black;
-  background-color: #ccc;
-  border-radius: 0.2rem;
-  padding: .35rem 2rem .35rem 0;
+.navbarMainContainer .navButtons ul li .tabs:hover {
+  background-color: #3ebc60;
 }
 
-.all_categories:hover {
-  background-color: #ddd;
-  cursor: pointer;
+.bars {
+  margin-right: 1rem;
+  margin-left: .4rem;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    
+.navbarMainContainer .buttons {
+  color: #000;
+  background-color: #e9f01a;
+  padding: 5px 20px;
+  border-radius: 3px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+  transition: all 0.15s ease;
 }
 
-.seller {
-  color: black;
-  background-color: yellow;
-  border-radius: 0.2rem;
-  padding: 0.35rem 2rem;
+.navbarMainContainer .buttons:hover {
+  background-color: #c0c614;
+  transform: translateY(1px);
 }

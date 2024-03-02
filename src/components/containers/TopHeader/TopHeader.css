@@ -24,11 +24,10 @@
 .tab::before {
     content: "";
     position: absolute;
-    width: 85%;
+    width: 100%;
     top: 0;
     bottom: 0;
     background-image: linear-gradient(90deg, #010101, #35365d);
-    margin-left: -2px;
     /* underline color */
     background-size: 0 2px;
     /* vertical size of underline */

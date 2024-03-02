@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+import '../../../../public/fruits.png'
 
 import {
   DropdownMenu,
@@ -19,54 +21,63 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="background">
-      <div className="flex flex-row">
-        <div className="subContainer">
-          <ul className="flex flex-row">
-            <li className="all_categories list">
+    <div className="navbarMainBackground">
+      <div className="navbarMainContainer">
+        <div className="allCategories">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="outline-none" style={{ padding: '.35rem 2rem .35rem 0' }}>
               <FontAwesomeIcon icon={faBars} className="bars" />
-              <DropdownMenu>
-                <DropdownMenuTrigger>All Categories</DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuLabel>Product Categories</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  {ProductCategories.categories.map((category) => (
-                    <DropdownMenuItem key={category.id}>
-                      <Link to={`/category/${category.category_name}`}>
-                        {category.category_name}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
+              All Categories
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>Product Categories</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              {
+                ProductCategories.categories.map((category) => {
+                  return (
+                    <>
+                      <DropdownMenuItem key={category.id}>
+                        <div className="categoryGroup">
+                          <img src={category.path} className="logos" />
+                          <Link to={`/category/${category.category_name}`}>
+                            {category.category_name}
+                          </Link>
+                        </div>
+                      </DropdownMenuItem>
+                    </>
+                  )
+                })
+              }
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+
+        <div className="navButtons">
+          <ul>
+            <li>
+              <NavLink to={'/'} className="tabs">Home</NavLink>
             </li>
-            <li className="list">
-              <Link to={"/"}>Home</Link>
+            <li>
+              <NavLink to={'/'} className="tabs">Shop +</NavLink>
             </li>
-            <li className="list">
-              <Link to={"/"}>Shop +</Link>
+            <li>
+              <NavLink to={'/'} className="tabs">Pages +</NavLink>
             </li>
-            <li className="list">
-              <Link to={"/"}>Pages +</Link>
+            <li>
+              <NavLink to={'/'} className="tabs">Dashboard</NavLink>
             </li>
-            <li className="list">
-              <Link to={"/"}>About</Link>
+            <li>
+              <NavLink to={'/'} className="tabs">Contact Us</NavLink>
             </li>
-            <li className="list">
-              <Link to={"/"}>Blog</Link>
-            </li>
-            <li className="list">
-              <Link to={"/"}>User Dashboard</Link>
-            </li>
-            <li className="list">
-              <Link to={"/"}>Contact</Link>
+            <li>
+              <NavLink to={'/'} className="tabs">About Us</NavLink>
             </li>
           </ul>
-          <div className="buttons">
-            <Link to={"/"} className="seller">
-              Seller Login
-            </Link>
-          </div>
+        </div>
+
+        <div className="flex flex-row gap-4">
+          <Link className="buttons">User Login</Link>
+          <Link className="buttons">Seller Login</Link>
         </div>
       </div>
     </div>
