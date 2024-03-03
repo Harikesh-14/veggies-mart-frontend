@@ -34,6 +34,8 @@
 .categoryGroup img {
   width: 25px;
   margin-right: 15px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .navbarMainContainer .navButtons ul {

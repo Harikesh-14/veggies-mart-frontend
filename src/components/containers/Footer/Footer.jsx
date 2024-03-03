@@ -8,7 +8,7 @@ const Footer = () => {
         <ul className="ftr">
           <li className="footer_li">
             <h4>Free Shipping</h4>
-            <p>When ordering more than $100</p>
+            <p>When ordering more than Rs. 600</p>
           </li>
           <li className="footer_li">
             <h4>Free Return</h4>
