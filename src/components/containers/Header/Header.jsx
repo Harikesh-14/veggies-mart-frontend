@@ -11,10 +11,12 @@ function Header() {
     <div className='headerMainContainer flex flex-row items-center justify-between w-10/12 mx-auto'>
       <div className="logoArea flex flex-row items-center gap-3">
         <img src="../../../../online-shopping.png" alt="Logo" className="w-20" />
-        <span className='flex flex-row gap-1 select-none'>
-          <p className='text-3xl font-bold text-green-500'>Veggies</p>
-          <p className='text-3xl font-bold'>Mart</p>
-        </span>
+        <Link to={'/'}>
+          <span className='flex flex-row gap-1 select-none'>
+            <p className='text-3xl font-bold text-green-500'>Veggies</p>
+            <p className='text-3xl font-bold'>Mart</p>
+          </span>
+        </Link>
       </div>
 
       <div className="searchBoxArea flex flex-row items-center gap-4">
