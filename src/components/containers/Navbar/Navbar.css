@@ -17,11 +17,13 @@
   color: black;
   background-color: #f7f7f7;
   border-radius: 0.2rem;
+  transition: all 0.15s ease;
 }
 
 .allCategories :hover {
-  background-color: aliceblue;
+  background-color: #e0e0e0;
   border-radius: 4px;
+  transform: translateY(1px);
 }
 
 .categoryGroup {
