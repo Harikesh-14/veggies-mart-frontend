@@ -1,0 +1,40 @@
+{
+    "carousel": [
+        {
+            "id": 1,
+            "title": "Seasonal Delights",
+            "slug": "Here is where you can buy your day to day grocery products",
+            "imagePath": "src/components/containers/ImageCarousel/fruit-basket.webp"
+        },
+        {
+            "id": 2,
+            "title": "Fresh Grocery",
+            "slug": "We provide Fresh and organic Fruits To your Door.",
+            "imagePath": "src/components/containers/ImageCarousel/lady-holding-basket.png"
+        },
+        {
+            "id": 3,
+            "title": "Convenient Delivery",
+            "slug": "You can buy all the Grocery Items Hasselfree.",
+            "imagePath": "src/components/containers/ImageCarousel/delivery-boy.png"
+        },
+        {
+            "id": 4,
+            "title": "Healthy Options",
+            "slug": "Discover a wide range of healthy options for your everyday meals.",
+            "imagePath": "src/components/containers/ImageCarousel/healthy-options.png"
+        },
+        {
+            "id": 5,
+            "title": "Special Offers",
+            "slug": "Explore special offers and discounts on your favorite groceries.",
+            "imagePath": "src/components/containers/ImageCarousel/special-offer.png"
+        },
+        {
+            "id": 6,
+            "title": "Farm Fresh",
+            "slug": "Experience the taste of farm-fresh produce delivered to your doorstep.",
+            "imagePath": "src/components/containers/ImageCarousel/farm-fresh.png"
+        }                
+    ]
+}
