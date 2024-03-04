@@ -1,0 +1,34 @@
+{
+    "marketList" : [
+        {
+            "id": 1,
+            "title":"Fruits",
+            "imagepath":"assets/images/fruisMarketPlace.avif"
+        },
+        {
+            "id": 2,
+            "title":"Vegetables",
+            "imagepath":"assets/images/Vegetables.avif"
+        },
+        {
+            "id": 3,
+            "title":"Juice",
+            "imagepath":"assets/images/Juices.webp"
+        },
+        {
+            "id": 4,
+            "title":"Meat",
+            "imagepath":"assets/images/Meat.avif"
+        },
+        {
+            "id": 5,
+            "title":"Cold Drinks",
+            "imagepath":"assets/images/ColdDrinks.avif"
+        },
+        {
+            "id": 6,
+            "title":"Breads",
+            "imagepath":"assets/images/Breads.avif"
+        }
+    ]
+}
