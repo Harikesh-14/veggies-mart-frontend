@@ -39,31 +39,61 @@ const MarketCategory = () => {
     ],
   };
 
+  const templateData = {
+    template: [
+      {
+        id: 1,
+        title: "FRUITS",
+        header: "Healthy & Good Fruits",
+        button: "Shop Now >",
+        image: "../../../assets/images/templateFruits.jpeg",
+      },
+      {
+        id: 2,
+        title: "VEGETABLES",
+        header: "Fresh & Organic Vegetables",
+        button: "Shop Now >",
+        image: "../../../assets/images/templateVegetable.jpeg",
+      },
+      {
+        id: 3,
+        title: "JUICES",
+        header: "Best Fruit Juices",
+        button: "Shop Now >",
+        image: "../../../assets/images/templateJuice.jpeg",
+      },
+    ],
+  };
+
   useEffect(() => {
+    const handleScroll = () => {
+      const cards = document.querySelectorAll(".card");
+      const templateCards = document.querySelectorAll(".template-card");
+
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          card.classList.add("appear");
+        }
+      });
+
+      templateCards.forEach((templateCard) => {
+        const rect = templateCard.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          templateCard.classList.add("appear");
+        }
+      });
+    };
+
     document.addEventListener("scroll", handleScroll);
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const handleScroll = () => {
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      const rect = card.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        card.classList.add("appear");
-      }
-    });
-  };
-
   return (
     <div>
-      <Element name="top" />
-      <div className="title">
-        <Link to="top" smooth={true} duration={500}>
-          MarketPlace
-        </Link>
-      </div>
+      <div className="title">MarketPlace</div>
       <div className="cards-container">
         {marketPlaceData.marketPlace.map((item) => (
           <div key={`marketplace_${item.id}`} className="card">
@@ -73,6 +103,16 @@ const MarketCategory = () => {
               className="marketImage"
             />
             <h3>{item.title}</h3>
+          </div>
+        ))}
+      </div>
+      <div className="template-cards-container">
+        {templateData.template.map((item) => (
+          <div key={`template_${item.id}`} className="template-card">
+            <p>{item.header}</p>
+            <h3>{item.title}</h3>
+            <button>{item.button}</button>
+            <img src={item.image} alt={item.title} className="template-image" />
           </div>
         ))}
       </div>

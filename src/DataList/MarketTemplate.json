@@ -1,0 +1,25 @@
+{
+    "template": [
+        {
+            "id":1,
+            "title":"FRUITS",
+            "header":"Healthy & Good Fruits",
+            "button":"Shop Now >",
+            "image":"../../../assets/images/templateFruits.jpeg"
+        },
+        {
+            "id":2,
+            "title": "VEGETABLES",
+            "header":"Fresh & Organic Vegetables",
+            "button":"Shop Now >",
+            "image":"../../../assets/images/templateVegetable.jpeg"
+        },
+        {
+            "id":3,
+            "title":"JUICES",
+            "header" : "Best Fruit Juices",
+            "button":"Shop Now >",
+            "image":"../../../assets/images/templateJuice.jpeg"
+        }
+    ]
+}

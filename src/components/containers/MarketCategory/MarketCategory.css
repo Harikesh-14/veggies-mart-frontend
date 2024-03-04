@@ -35,3 +35,53 @@ h3 {
   margin-top: 10px;
   font-size: 16px;
 }
+
+/* Add these styles to your existing CSS */
+
+.template-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13rem;
+}
+
+.template-card {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.template-card.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.template-image {
+  height: 100px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.template-card p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.template-card button {
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
