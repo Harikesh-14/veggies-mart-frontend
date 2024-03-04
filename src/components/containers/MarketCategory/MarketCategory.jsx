@@ -1,77 +1,72 @@
 import React, { useEffect } from "react";
-import { Link, Element } from "react-scroll";
+import { Link } from "react-scroll";
 import "./MarketCategory.css";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+const marketPlaceData = {
+  marketPlace: [
+    {
+      id: 1,
+      title: "Fruits",
+      imagepath: "../../../../public/fruitsMarketPlace.avif",
+    },
+    {
+      id: 2,
+      title: "Vegetables",
+      imagepath: "../../../../public/vegetables.avif",
+    },
+    {
+      id: 3,
+      title: "Juice",
+      imagepath: "../../../../public/Juices.webp",
+    },
+    {
+      id: 4,
+      title: "Meat",
+      imagepath: "../../../../public/Meat.avif",
+    },
+    {
+      id: 5,
+      title: "Cold Drinks",
+      imagepath: "../../../../public/ColdDrinks.png",
+    },
+    {
+      id: 6,
+      title: "Breads",
+      imagepath: "../../../../public/Breads.avif",
+    },
+  ],
+};
 
 const MarketCategory = () => {
-  // Sample data from your JSON
-  const marketPlaceData = {
-    marketPlace: [
-      {
-        id: 1,
-        title: "Fruits",
-        imagepath: "../../../../public/fruitsMarketPlace.avif",
-      },
-      {
-        id: 2,
-        title: "Vegetables",
-        imagepath: "../../../../public/vegetables.avif",
-      },
-      {
-        id: 3,
-        title: "Juice",
-        imagepath: "../../../../public/Juices.webp",
-      },
-      {
-        id: 4,
-        title: "Meat",
-        imagepath: "../../../../public/Meat.avif",
-      },
-      {
-        id: 5,
-        title: "Cold Drinks",
-        imagepath: "../../../../public/ColdDrinks.png",
-      },
-      {
-        id: 6,
-        title: "Breads",
-        imagepath: "../../../../public/Breads.avif",
-      },
-    ],
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const cards = document.querySelectorAll(".card");
-
-      cards.forEach((card) => {
-        const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom >= 0) {
-          card.classList.add("appear");
-        }
-      });
-    };
-
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div>
-      <div className="title">MarketPlace</div>
-      <div className="cards-container">
-        {marketPlaceData.marketPlace.map((item) => (
-          <div key={`marketplace_${item.id}`} className="card">
-            <img
-              src={item.imagepath}
-              alt={item.title}
-              className="marketImage"
-            />
-            <h3>{item.title}</h3>
-          </div>
-        ))}
-      </div>
+      <div className="title mx-6">MarketPlace</div>
+      <Carousel
+        opts={{
+          align: "start",
+        }}
+        className="w-full max-w-sm"
+      >
+        <CarouselContent>
+          {marketPlaceData.marketPlace.map((item) => (
+            <CarouselItem key={item.id}>
+              <img src={item.imagepath} alt={item.title} className="mx-6"/>
+              <Link to={item.title} className="categoryTitle align-middle">
+                {item.title}
+              </Link>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </div>
   );
 };
