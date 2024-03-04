@@ -51,7 +51,7 @@
       },
       {
         "id": 8,
-        "category_name": "Oils and Cooking Essentials",
+        "category_name": "Oils and Cooking",
         "products": ["Olive Oil", "Canola Oil", "Salt", "Pepper", "Vinegar"],
         "description": "Essential cooking ingredients to add flavor and texture to your meals.",
         "path": "../../../../olive-oil.png"
@@ -65,7 +65,7 @@
       },
       {
         "id": 10,
-        "category_name": "Canned and Jarred Goods",
+        "category_name": "Canned & Jarred Goods",
         "products": ["Canned Tomatoes", "Pickles", "Jam", "Soup", "Pasta Sauce"],
         "description": "Convenient and ready-to-use canned and jarred goods for quick and easy meals.",
         "path": "../../../../canned-food.png"
@@ -79,7 +79,7 @@
       },
       {
         "id": 12,
-        "category_name": "Bakery and Baking Ingredients",
+        "category_name": "Bakery & Baking Products",
         "products": ["Flour", "Sugar", "Baking Powder", "Yeast", "Chocolate Chips"],
         "description": "High-quality ingredients for baking your favorite bread and desserts.",
         "path": "../../../../bread.png"
