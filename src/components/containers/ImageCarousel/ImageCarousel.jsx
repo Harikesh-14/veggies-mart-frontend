@@ -61,8 +61,6 @@ function ImageCarousel() {
                         })
                     }
                 </CarouselContent>
-                {/* <CarouselPrevious />
-      <CarouselNext /> */}
             </Carousel>
         </div>
     )
