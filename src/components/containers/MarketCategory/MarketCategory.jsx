@@ -23,7 +23,7 @@ const MarketCategory = () => {
           {
             ProductCategories.categories.map((item, index) => {
               return (
-                <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/5">
+                <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/6">
                   <div className="p-1">
                     <Link to={`/category/${item.category_name}`}>
                       <Card>
