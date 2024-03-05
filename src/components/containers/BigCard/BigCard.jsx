@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+
 import { Link } from "react-router-dom";
 
 const BigCard = () => {
+  const controls = useAnimation();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) { // Adjust this value according to your needs
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      controls.start("visible");
+    }
+  }, [isVisible, controls]);
+
   return (
-    <div className="w-11/12 flex flex-row p-20 gap-5 justify-center items-center mx-auto">
+    <motion.div
+      className="w-11/12 flex flex-row p-20 gap-5 justify-center items-center mx-auto"
+      initial="hidden"
+      animate={controls}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0.9, y: 400 },
+      }}
+      transition={{ duration: 1 }}
+    >
       {/* first */}
 
       <div className="shadow rounded-xl bg-green-200 flex flex-col gap-4 p-6 w-1/3">
@@ -54,7 +88,7 @@ const BigCard = () => {
           className="w-full h-2/3 rounded-4xl"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -40,7 +40,7 @@ const MarketCategory = () => {
   }, [isVisible, controls]);
 
   return (
-    <div className="mb-10">
+    <div>
       <p className="text-4xl mx-16 mt-20 mb-8 font-semibold">Market Category</p>
       <Carousel className="w-10/12 mx-auto">
         <CarouselContent className="-ml-1">
@@ -51,8 +51,8 @@ const MarketCategory = () => {
                 initial="hidden"
                 animate={controls}
                 variants={{
-                  visible: { opacity: 1, y: 0 },
-                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: 300 },
                 }}
                 transition={{ duration: 1 }}
               >
