@@ -5,6 +5,8 @@ import MarketCategory from '../containers/MarketCategory/MarketCategory'
 import BigCard from '../containers/BigCard/BigCard'
 import SpecialOffer from '../containers/SpecialOffer/SpecialOffer'
 import FreshFruits from '../containers/FreshFruits/FreshFruits'
+import TopSellingProducts from '../containers/TopSellingProducts/TopSellingProducts'
+import TwoCard from '../containers/TwoCard/TwoCard'
 
 function HomePage() {
   return (
@@ -13,8 +15,10 @@ function HomePage() {
       <Benefits />
       <MarketCategory />
       <BigCard />
-      <SpecialOffer />
       <FreshFruits />
+      <SpecialOffer />
+      <TopSellingProducts />
+      <TwoCard />
     </>
   )
 }

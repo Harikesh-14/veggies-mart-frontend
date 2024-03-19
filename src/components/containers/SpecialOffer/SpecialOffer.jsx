@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function SpecialOffer() {
   return (
-    <div className="flex flex-row pl-24 items-center rounded-md bg-purple-200 py-10">
+    <div className="mt-32 flex flex-row pl-24 items-center rounded-md bg-purple-200 py-10">
       <div className="outer_div flex flex-row justify-center items-center">
         <div className="text font-bold m-10">
           <div className="flex flex-row gap-2 my-3">

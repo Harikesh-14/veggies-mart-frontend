@@ -14,7 +14,7 @@ function ProductCard() {
   const [hover, setHover] = useState(0);
   return (
     <div>
-      <Card className="flex flex-col justify-center items-center px-6 bg-slate-500">
+      <Card className="flex flex-col justify-center items-center px-6 bg-white border-2">
         <CardHeader className="flex flex-col justify-center">
           <img src="../../../../apple.png" alt="Tomato" className="w-36" />
           <div className="star-rating flex justify-center">
