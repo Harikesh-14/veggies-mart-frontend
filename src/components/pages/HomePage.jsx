@@ -7,6 +7,7 @@ import SpecialOffer from '../containers/SpecialOffer/SpecialOffer'
 import FreshFruits from '../containers/FreshFruits/FreshFruits'
 import TopSellingProducts from '../containers/TopSellingProducts/TopSellingProducts'
 import TwoCard from '../containers/TwoCard/TwoCard'
+import Footer from '../containers/Footer/Footer'
 
 function HomePage() {
   return (
@@ -19,6 +20,7 @@ function HomePage() {
       <SpecialOffer />
       <TopSellingProducts />
       <TwoCard />
+      <Footer />
     </>
   )
 }
