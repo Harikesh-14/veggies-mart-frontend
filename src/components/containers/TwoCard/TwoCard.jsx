@@ -38,12 +38,12 @@ function TwoCard() {
       </div>
 
       <div className="w-full flex justify-center items-center py-10 bg-purple-200">
-        <div className="w-3/5 flex flex-col justify-center items-center">
+        <div className="w-3/5 flex flex-col justify-center items-center gap-7">
           <h1 className="text-4xl font-bold text-center">Get the best deal on Dairy Products</h1>
-          <p className="text-center py-2">You get into the 2k+ best products in flash offer with add in products for your daily kitchen supply</p>
+          <p className="text-center">You get into the 2k+ best products in flash offer with add in products for your daily kitchen supply ❤️</p>
           <button
             type="button"
-            className="bg-green-500 text-white py-4 w-[180px] mt-5 rounded shadow hover:bg-slate-700 transition-all duration-300"
+            className="bg-green-500 text-white py-4 w-[180px] rounded shadow hover:bg-slate-700 transition-all duration-300"
           >
             Shop Now &gt;
           </button>
