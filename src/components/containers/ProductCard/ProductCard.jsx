@@ -35,10 +35,10 @@ function ProductCard() {
             })}
           </div>
           <CardTitle className="text-center"> Tomato</CardTitle>
-          <CardDescription>RS 50.00</CardDescription>
+          <CardDescription className="text-center">RS 50.00</CardDescription>
         </CardHeader>
         <CardContent>
-            <button className="bg-green-100 px-15">Add to Cart</button>
+            <button className="bg-green-200 w-[8rem] py-2 text-green-800 rounded font-semibold">Add to Cart &gt;</button>
         </CardContent>
       </Card>
     </div>
