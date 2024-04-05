@@ -22,7 +22,7 @@ function TwoCard() {
     ]
 
   return (
-    <div className="flex flex-row justify-center gap-4">
+    <div className="flex flex-row justify-center gap-4 py-10">
         {cardDetails.map((card, index) => (
             <div key={index} className={`shadow rounded-xl flex flex-col items-start gap-4 p-6 w-1/3 ${card.color}`}>
                 <p className=" font-thin text-xl">{card.title}</p>
