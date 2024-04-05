@@ -37,8 +37,19 @@ function ProductCard() {
           <CardTitle className="text-center"> Tomato</CardTitle>
           <CardDescription className="text-center">RS 50.00</CardDescription>
         </CardHeader>
-        <CardContent>
-            <button className="bg-green-200 w-[8rem] py-2 text-green-800 rounded font-semibold">Add to Cart &gt;</button>
+        <CardContent className="m-[-15px]">
+          <div className="py-1">
+            <select name="fruitQty" id="fruitQty" className="border p-1">
+              <option value="select-qty">Select quantity</option>
+              <option value="500g">500g</option>
+              <option value="1kg">1Kg</option>
+              <option value="2kg">2Kg</option>
+              <option value="3kg">3Kg</option>
+              <option value="4kg">4Kg</option>
+              <option value="5kg">5Kg</option>
+            </select>
+          </div>
+          <button className="bg-green-200 w-[8rem] py-2 mt-3 text-green-800 rounded font-semibold hover:bg-green-300">Add to Cart &gt;</button>
         </CardContent>
       </Card>
     </div>
