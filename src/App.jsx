@@ -1,9 +1,8 @@
-import { Button } from './components/ui/button'
 import './App.css'
-import TopHeader from './components/containers/TopHeader/TopHeader'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './Layout'
 import HomePage from './components/pages/HomePage'
+import LoginRegister from './components/pages/LoginRegister'
 
 function App() {
 
@@ -12,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path='/authenticate' element={<LoginRegister />} />
         </Route>
       </Routes>
     </>

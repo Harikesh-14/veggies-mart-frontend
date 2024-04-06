@@ -76,8 +76,8 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-4">
-          <Link className="buttons">User Login</Link>
-          <Link className="buttons">Seller Login</Link>
+          <Link to={'/authenticate'} className="buttons">User Login</Link>
+          <Link to={'/authenticate'} className="buttons">Seller Login</Link>
         </div>
       </div>
     </div>

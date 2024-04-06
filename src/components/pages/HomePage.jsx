@@ -22,7 +22,6 @@ function HomePage() {
       <TopSellingProducts />
       <TwoCard />
       <GetCoupons />
-      <Footer />
     </>
   )
 }
